@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+}
+
+.canteiner {
+    width: 320px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.products-titles {
+    text-align: center;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+}
+
+.sub-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #999999;
+    padding-top: 10px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.product {
+    width: 270px;
+    text-align: center;
+}
+
+.product>*+* {
+    margin-top: 12px;
+}
+
+.products-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+    row-gap: 40px;
+}
+
+.product-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.product-price {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.price-old {
+    text-decoration-line: line-through;
+    color: #999999;
+}
+
+.price-new {
+    font-weight: 700;
+    color: #F72464;
+}
+
+.button {
+    background: #FFFFFF;
+    border: 1px solid #F72464;
+    border-radius: 4px;
+    padding: 10.5px 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #777777;
+    font-family: inherit;
+
+}
+
+.section-button {
+    text-align: center;
+}
+
+/* media */
+@media(min-width:600px) {
+    .canteiner {
+        width: 600px;
+
+    }
+
+    .products-row {
+        column-gap: 30px;
+    }
+}
+@media(min-width:900px){
+    .canteiner{
+        width: 900px;
+    }
+    .section{
+        padding: 90px 0 ;
+    }
+    .title{
+        font-size: 42px;
+        line-height: 56px;
+    }
+    .sub-title{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .products-row{
+        justify-content:flex-start;
+    }
+}
